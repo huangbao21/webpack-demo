@@ -1,16 +1,15 @@
 import _ from 'lodash';
-import './style.css';
-import naruto from './naruto.jpg'
-
+import printMe from './print.js';
 function component(){
 	var element = document.createElement("div");
+	var btn = document.createElement('buttton');
 
 	element.innerHTML = _.join(['Hello','webpack'],' ');
-	element.classList.add("hello");
 
-	var img = new Image();
-	img.src = naruto;
-	element.appendChild(img);
+	btn.innerHTML = 'Click me and check the console';
+	btn.onclick = printMe;
+	element.appendChild(btn);
+
 
 	return element;
 }
