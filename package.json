@@ -4,17 +4,22 @@
   "description": "webpack-demo",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --colors"
+    "build": "webpack --colors",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "dependencies": {},
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.7",
+    "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^2.7.0"
+    "webpack": "^2.7.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.8.2"
   },
   "author": "BJ",
   "license": "ISC"
